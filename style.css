@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.hero {
+    background-image: url('Image_web_pariwisata/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 850px;
+    background-color: transparent;
+    border-radius: 45px;
+    /* opacity: 0.7; */
+}
+
+.tool-bar ul {
+    display: flex;      
+    list-style: none;    
+    gap: 30px;            
+    align-items: center;  
+    margin: 0;
+    padding: 0;
+}
+
+.tool-bar ul li {
+    position: relative;
+}
+
+
+.tool-bar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.nav-link.underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #ee5a24;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 2px;
+    transform: translateX(-50%);
+}
+
+.nav-link.underline:hover::after {
+    width: 70%;
+}
+
+.nav-link.underline:hover {
+    color: #ee5a24;
+    transform: translateY(-2px);
+}
+
+.awalan {
+    text-align: start;
+    color: white;
+    margin: auto;
+    padding: 5px 10px;
+    margin-top: 100px;
+}
+
+.awalan .title h1{
+    font-size: 5em;
+    font-weight: 800;
+}
+
+.awalan .subtitle p{
+    font-size: 2.5em;
+}
+
+.sub-title h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* beranda css */
+.hightlight {
+    text-align: center;
+    margin: 50px;
+}
+
+.hightlight h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: dimgray;
+}
+
+.card-fav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: -50px;
+    align-items: center;
+}
+
+.card-fav img {
+    width: 380px;
+    height: 476px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin: 100px;
+}
+
+.card-content {
+    max-width: 600px;
+    text-align: left;
+    }
+
+.card-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: dimgray;
+    }
+
+.card-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #444;
+    }
+
+.card-content a {
+    display: block;          
+    text-align: center;     
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+    border-bottom: 2px solid black;
+    width: fit-content;     
+    margin-left: auto;      
+    margin-right: auto;     
+    }
+.card-content a:hover {
+    color: #ee5a24;
+    border-color: #ee5a24;
+    }
+
+.banner a {
+    display: block;          
+    text-align: center;     
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+    border-bottom: 2px solid black;
+    width: fit-content;     
+    margin-left: auto;      
+    margin-right: auto; 
+}
+
+.banner a:hover {
+    color: #ee5a24;
+    border-color: #ee5a24;
+}
+
+.favorit {
+  background-color: #c4c4c4; 
+  padding: 10px 20px;       
+  border-radius: 20px;      
+  text-align: center;       
+  max-width: 1200px;
+  margin: 50px auto;        
+}
+
+.favorit h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;             
+  margin-bottom: 20px;
+}
+
+.favorit p {
+  font-size: 20px;
+  color: #fff;             
+  line-height: 1.6;
+}
+
+.card-jelajah {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: -50px;
+    align-items: center;
+}
+
+.card-jelajah img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+    margin: 100px;
+}
+
+.card-rasakan {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: -50px;
+    align-items: center;
+}
+
+.card-rasakan img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+    margin: 100px;
+    margin-top: -300px;
+    margin-left: 300px;
+}
+
+.card-konten {
+    max-width: 700px;
+    text-align: left;
+}
+
+.card-konten h1 {
+    margin-top: -200px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.card-nikmati {
+    max-width: 600px;
+    text-align: left;
+}
+
+.card-nikmati h2 {
+    margin-top: -350px;
+    margin-left: -100px;
+    font-size: 40px;
+}
+
+footer {
+  background: #fff;
+  padding: 40px 20px 20px;
+  border-top: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #000;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+.footer-logo img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.footer-menu {
+   /* margin-left: -500px; */
+}
+
+.footer-menu h4,
+.footer-contact h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu ul li {
+  margin-bottom: 10px;
+}
+
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.footer-menu ul li a:hover {
+  color: #000;
+}
+
+.footer-contact .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-right: 300px;
+}
+
+.footer-contact .social-icons img {
+  width:  50px;
+  height: 50px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* destinasi css */
+.hightlight {
+    text-align: center;
+    margin: 50px;
+}
+
+.hightlight h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: dimgray;
+}
